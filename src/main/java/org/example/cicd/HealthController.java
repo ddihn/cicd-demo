@@ -26,4 +26,14 @@ public class HealthController {
                 "startedAt", startedAt.toString()
         );
     }
+
+    @GetMapping("/api/new01")
+    public Map<String, String> info() throws UnknownHostException {
+        return Map.of(
+                "version", "cicd01",
+                "hostname", InetAddress.getLocalHost().getHostName(),
+                "startedAt", startedAt.toString(),
+                "desc","0209 첫 CICD 동작 입니다."
+        );
+    }
 }
