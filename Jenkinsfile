@@ -36,7 +36,7 @@ pipeline {
 
       environment {
           DOCKER_IMAGE = 'yooncount/demo-backend'
-          GITOPS_REPO = 'github.com/ddihn/demo-gitops.git'
+          GITOPS_REPO = 'github.com/ddihn/cicd-demo.git'
       }
 
       stages {
