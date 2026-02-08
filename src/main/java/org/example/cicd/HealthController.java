@@ -28,7 +28,7 @@ public class HealthController {
     }
 
     @GetMapping("/api/new01")
-    public Map<String, String> info() throws UnknownHostException {
+    public Map<String, String> newfunc() throws UnknownHostException {
         return Map.of(
                 "version", "cicd01",
                 "hostname", InetAddress.getLocalHost().getHostName(),
